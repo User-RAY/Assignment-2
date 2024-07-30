@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+              
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* GLOBAL STYLES */
+
+:root{
+    --primary-theme-color: rgb(253, 81, 51);
+}
+
+.inter-regular{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+.miama-regular{
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+    font-size: 10rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+                                                
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.btn-primary{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background-color: var(--primary-theme-color);
+    cursor: pointer;
+}
+
+.btn-secondary{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+}
+
+img{
+    width: 100%;
+}
+
+/* .btn-primary:hover{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    margin: 0 0.9rem 0 0;
+}
+
+.btn-secondary:hover{
+    background-color: var(--primary-theme-color);
+    border: none;
+    margin: 0.8px;
+} */
+
+/* .space{
+    padding: 1rem 0;
+} */
+
+
+/* HEADER SECTION */
+
+
+.header{
+
+    background: linear-gradient(rgb(28, 27, 27), rgb(37, 37, 37), rgb(28, 27, 27));
+
+}
+
+/* header nav */
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+.logo{
+    color: var(--primary-theme-color);
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2rem;
+    padding: 0.6rem 0.1rem;
+    justify-content: space-between;
+}
+/* nav ul li{
+
+} */
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin: 0 1rem;
+    transition: all 0.3s ease-in;
+}
+
+a.active{
+    color: rgb(255, 255, 255);
+    background-color: var(--primary-theme-color);
+}
+
+nav ul li:first-child a{
+    margin: 0 1rem 0 0;
+}
+nav ul li:last-child a{
+    margin: 0 0 0 1rem;
+}
+nav ul li a:hover {
+    background-color: var(--primary-theme-color);
+    color: rgb(255, 255, 255);
+}
+
+/* header banner */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content{
+    color: white;
+    width: 50%;
+}
+
+#banner-title{
+    color: white;
+    font-size: 4.8rem;
+    font-weight: 900;
+    padding: 1rem 0;
+}
+
+.shape{
+    display: inline-block;
+    height: 0;
+    margin-top: -5rem;
+    margin-right: 1rem;
+}
+
+
+#banner-description{
+    padding: 1rem 0 2rem;
+    font-size: 1.2rem;
+    color: rgb(181, 180, 180);
+}
+
+.btn{
+    margin: 0 1rem 2rem 0;
+}
+
+.btn-one{
+    margin: 0 0 2rem 0;
+}
+
+.banner img{
+    width: fit-content;
+    align-self: flex-end;
+}
+
+
+/* MAIN SECTION */
+
+main{
+
+    background-color: black;
+    color: #ffffff;
+}
+
+/* Change Your Habits Section */
+
+.habit{
+    text-align: center;
+    padding: 6rem 0;
+}
+.habit-title{
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+}
+
+.habit-description{
+    font-size: 1rem;
+    margin: 0 0 4rem 0;
+    color: #cfcfcf;
+}
+
+.circle-cards{
+    display: flex;
+}
+
+.circle-cards .card{
+    width: 50%;
+}
+
+.circle-cards .card img{
+    width: 63%;
+    border-radius: 50%;
+}
+
+.circle-cards .card h3{
+    margin: 1rem 0;
+}
+
+.circle-cards .card p{
+    width: 80%;
+    margin: auto;
+    color: #c3bdbd;
+}
+
+
+
+
+/* Run Section */
+
+.run{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.2rem;
+    background-color: #272727;
+    border-radius: 1rem;
+}
+
+.run-content{
+    padding-left: 1rem;
+}
+
+.run-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0 0 2rem 0;
+}
+
+.run-description{
+    width: 65%;
+    font-size: 0.88rem;
+    margin: 0 0 2rem 0;
+}
+
+.run-content button{
+    padding: 1rem 4.5rem;;
+}
+
+.run img{
+
+    width: 28rem;
+    height: 25rem;
+    object-fit: none;
+    object-position: 69% 30%;
+    border-radius: 1rem;
+}
+
+
+
+/* BMI Section */
+
+.bmi{
+    width: 50%;
+    text-align: left;
+    padding: 5rem 0;
+    margin: auto;
+}
+
+.bmi h1{
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+}
+
+.bmi p{
+    font-size: 1rem;
+    color: #c3bdbd;
+}
+
+.bmi-content{
+
+background-color: #272727;
+
+}
+
+
+.bmi-content > div{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bmi-chart{
+    
+}
+
+.bmi-calculator{
+    
+}
