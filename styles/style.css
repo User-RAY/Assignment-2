@@ -15,7 +15,7 @@
 /* GLOBAL STYLES */
 
 :root{
-    --primary-theme-color: rgb(253, 81, 51);
+    --primary-theme-color: rgba(230, 83, 60, 1);
 }
 
 .inter-regular{
@@ -34,15 +34,16 @@
 }
                                                 
 .container{
-    width: 80%;
+    width: 75%;
+    max-width: 1060px;
     margin: auto;
 }
 
 .btn-primary{
     font-size: 1.1rem;
     font-weight: bold;
-    padding: 1rem 3rem;
-    border-radius: 2rem;
+    padding: 1rem 2.5rem;
+    border-radius: 2.6rem;
     border: none;
     color: white;
     background-color: var(--primary-theme-color);
@@ -89,22 +90,27 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0rem;
+    padding: 3.5rem 0 1.8rem 0;
 }
 
 .logo{
     color: var(--primary-theme-color);
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-style: italic;
+}
+
+.menu-icon{
+    display: none;
+    color: #ffffff;
 }
 
 nav ul{
     list-style: none;
     display: flex;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 2rem;
-    padding: 0.6rem 0.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.4rem;
+    padding: 0.7rem 0.2rem;
     justify-content: space-between;
 }
 /* nav ul li{
@@ -114,22 +120,25 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    margin: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2.8rem;
+    margin: 0 0.5rem;
     transition: all 0.3s ease-in;
 }
 
 a.active{
     color: rgb(255, 255, 255);
+    font-weight: 600;
     background-color: var(--primary-theme-color);
 }
 
 nav ul li:first-child a{
-    margin: 0 1rem 0 0;
+    margin: 0 0.5rem 0 0;
 }
 nav ul li:last-child a{
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 0.5rem;
 }
 nav ul li a:hover {
     background-color: var(--primary-theme-color);
@@ -153,7 +162,6 @@ nav ul li a:hover {
     color: white;
     font-size: 4.8rem;
     font-weight: 900;
-    padding: 1rem 0;
 }
 
 .shape{
@@ -165,9 +173,9 @@ nav ul li a:hover {
 
 
 #banner-description{
-    padding: 1rem 0 2rem;
-    font-size: 1.2rem;
-    color: rgb(181, 180, 180);
+    padding: 1.7rem 0 1.7rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .btn{
@@ -178,9 +186,68 @@ nav ul li a:hover {
     margin: 0 0 2rem 0;
 }
 
+.banner-pic{
+    position: relative;
+    align-self: flex-end;
+}
+
 .banner img{
     width: fit-content;
     align-self: flex-end;
+}
+
+.circle-img{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--primary-theme-color);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.banner-box{
+    position: absolute;
+    color: white;
+    background: rgba(48, 48, 48, 0.54);
+    padding: 1.25rem 1.4rem;
+    border-radius: 0.8rem;
+    backdrop-filter: blur(0.5rem);
+}
+
+.banner-box1{
+    top: 26rem;
+    left: -7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-box2{
+    top: 7.5rem;
+    right: -3rem;
+    padding: 1rem 1.7rem;
+}
+.banner-box h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+}
+
+.banner-box p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+.box-content h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.box-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
 }
 
 
@@ -318,3 +385,76 @@ background-color: #272727;
 .bmi-calculator{
     
 }
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+
+
+/* Small below 576px */
+
+
+
+@media screen and (max-width:576px) {
+
+    .container{
+        width: 95%;
+    }
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner-content{
+        width: 100%;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .header-nav ul{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+/* Large above 993px and below 1150px */
+
+
+@media screen and (min-width: 1040px) and (max-width:1250px) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width:1040px) {
+    .container{
+        width: 95%;
+    }
+
+    .banner-box2{
+        right: -1rem;
+    }
+}
+
+
+
+
+
+
+
+/* Medium above 576px and below 993px */
+
