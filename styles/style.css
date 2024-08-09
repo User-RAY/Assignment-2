@@ -41,7 +41,7 @@
 
 .btn-primary{
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 600;
     padding: 1rem 2.5rem;
     border-radius: 2.6rem;
     border: none;
@@ -81,7 +81,8 @@ img{
 
 .header{
 
-    background: linear-gradient(rgb(28, 27, 27), rgb(37, 37, 37), rgb(28, 27, 27));
+    background: rgb(17,17,17);
+    background: linear-gradient(rgba(17,17,17,1) 0%, rgb(30, 30, 30) 50%, rgba(17,17,17,1) 100%);
 
 }
 
@@ -188,6 +189,7 @@ nav ul li a:hover {
 
 .banner-pic{
     position: relative;
+    display: flex;
     align-self: flex-end;
 }
 
@@ -400,12 +402,15 @@ background-color: #272727;
 
 /* Small below 576px */
 
-
-
 @media screen and (max-width:576px) {
 
     .container{
-        width: 95%;
+        width: 90%;
+    }
+
+    .header{
+        overflow: hidden;
+        max-height: 150rem;
     }
     .banner{
         flex-direction: column;
@@ -423,6 +428,74 @@ background-color: #272727;
         display: none;
     }
 
+    #banner-title{
+        font-size: 2.25rem;
+    }
+
+    .shape{
+        font-size: 4.5rem;
+        margin-right: 0.5rem;
+    }
+
+    #banner-description{
+        width: 75%;
+    }
+
+    .btn-primary{
+    }
+    .btn-secondary{
+        background-color: transparent;
+    }
+    .banner-content{
+        flex-wrap: nowrap;
+    }
+
+    #club{
+        display: none;
+    }
+
+    .btn-one{
+        padding: 1rem 1.2rem;
+    }
+    .btn{
+        margin-bottom: 3rem;
+    }
+
+    .banner{
+        height: 132vh;
+    }
+
+    .banner-pic{
+        align-self: center;
+    }
+
+    .banner-box{
+        padding: 1rem 1.2rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .banner-box1{
+        top: 15rem;
+        left: 0rem;
+    }
+
+    .banner-box1 p{
+        font-size: 0.8rem;
+    }
+
+    .banner-box2{
+        top: 3rem;
+        right: 0rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .banner-box2 h3{
+        font-size: 2rem;
+    }
+
+    .banner-box2 p{
+        font-size: 0.7rem;
+    }
 
 }
 
@@ -431,10 +504,9 @@ background-color: #272727;
 
 
 
-/* Large above 993px and below 1150px */
+/* Large above 993px and below 1250px */
 
-
-@media screen and (min-width: 1040px) and (max-width:1250px) {
+@media screen and (min-width: 1040px) and (max-width:1340px) {
     .container{
         width: 90%;
     }
@@ -447,6 +519,10 @@ background-color: #272727;
 
     .banner-box2{
         right: -1rem;
+    }
+
+    #banner-title{
+        font-size: 4.4rem;
     }
 }
 
