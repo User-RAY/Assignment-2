@@ -273,9 +273,11 @@ main{
 }
 
 .habit-description{
-    font-size: 1rem;
-    margin: 0 0 4rem 0;
-    color: #cfcfcf;
+    font-size: 0.87rem;
+    margin: 0 auto 4rem auto;
+    color: rgba(255, 255, 255, 0.5);
+    width: 60%;
+
 }
 
 .circle-cards{
@@ -287,8 +289,9 @@ main{
 }
 
 .circle-cards .card img{
-    width: 63%;
+    width: 71%;
     border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.1);
 }
 
 .circle-cards .card h3{
@@ -298,7 +301,9 @@ main{
 .circle-cards .card p{
     width: 80%;
     margin: auto;
-    color: #c3bdbd;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.87rem;
+    font-weight: 400;
 }
 
 
@@ -495,6 +500,38 @@ background-color: #272727;
 
     .banner-box2 p{
         font-size: 0.7rem;
+    }
+
+    .habit{
+        padding: 0 0 1.7rem;
+    }
+
+    .habit-title{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .habit-description{
+        width: 80%;
+        line-height: 1.5rem;
+        letter-spacing: 0.3px;
+        margin: 0 auto 3.6rem;
+    }
+
+    .circle-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circle-cards .card{
+        width: 65%;
+        /* padding-bottom: 2.5rem; */
+        margin: 1.7rem;
+    }
+
+    .circle-cards .card h3{
+        font-weight: 600;
+        font-size: 1.1rem;
     }
 
 }
