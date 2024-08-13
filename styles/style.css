@@ -397,9 +397,7 @@ background-color: rgba(34, 34, 34, 1.00);
 
 }
 
-.bmi-chart{
-    
-}
+
 
 .bmi-chart h2{
     font-size: 1.75rem;
@@ -581,8 +579,7 @@ input::placeholder{
         letter-spacing: 0.5px;
     }
 
-    .btn-primary{
-    }
+
     .btn-secondary{
         background-color: transparent;
     }
@@ -705,6 +702,56 @@ input::placeholder{
         object-fit: cover;
         object-view-box: inset(0% 9% 32% 19%);
         zoom: normal;
+    }
+
+
+    
+
+    .bmi{
+        width: auto;
+        padding: 2rem 0;
+    }
+
+    .bmi h1{
+        font-size: 2rem;
+    }
+
+    .bmi p{
+        width: 90%;
+        line-height: 1.5rem;
+        letter-spacing: 0.3px;
+    }
+
+
+    .bmi-content > div{
+        flex-direction: column;
+    }
+
+    .bmi-chart{
+        padding-bottom: 2.62rem;
+    }
+
+    .bmi-chart h2{
+        font-size: 1rem;
+        margin: 2.125rem auto 1.5rem;
+    }
+
+    .bmi-calculator-form{
+        width: auto;
+    }
+
+    .bmi-calculator-form h2{
+        font-size: 1rem;
+    }
+
+    .bmi-calculator-form p{
+        width: 90%;
+        line-height: 1.5rem;
+        letter-spacing: 0.3px;
+    }
+
+    #activity{
+        width: 96%;
     }
 
     
