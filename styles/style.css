@@ -811,8 +811,29 @@ input::placeholder{
         width: 96%;
     }
 
-    
+    .team-title h2{
+        font-size: 2rem;
+    }
 
+    .team-title p{
+        width: 80%;
+    }
+    
+    .team-info{
+        grid-template-columns: 1fr;
+    }
+
+    .trainer{
+        display: none;
+    }
+    
+    .trainer-3{
+        grid-row-start: 3;
+    }
+
+    .trainer-5{
+        grid-row-start: 2;
+    }
 }
 
 
