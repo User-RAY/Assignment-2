@@ -834,6 +834,10 @@ input::placeholder{
     .trainer-5{
         grid-row-start: 2;
     }
+
+    .team-info img{
+        min-width: auto;
+    }
 }
 
 
