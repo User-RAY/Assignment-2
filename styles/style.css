@@ -509,11 +509,68 @@ input::placeholder{
 }
 
 
+.team-content{
+    padding: 5.5rem 0 ;
+}
+
+.team-title{
+    text-align: center;
+}
+
+.team-title h2{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 0.87rem;
+}
+
+.team-title p{
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.50);
+    width: 60%;
+    margin: 0 auto 3.62rem auto;
+}
 
 
+.team-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1.12rem;
+}
 
+.team-info > div{
+    position: relative;
+    height: 17rem;
+}
 
+.team-info img{
+    min-width: 20.37rem;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+    border-radius: 1.12rem;
+}
 
+.team-nameplate{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.team-nameplate h2{
+    font-size: 1.25rem;
+    font-weight: 900;
+
+}
+.team-nameplate p{
+    font-size: 0.87rem;
+    color: rgba(255, 255, 255, 0.50);
+}
 
 
 
