@@ -509,6 +509,9 @@ input::placeholder{
 }
 
 
+
+/* Team Section */
+
 .team-content{
     padding: 5.5rem 0 ;
 }
@@ -571,6 +574,99 @@ input::placeholder{
     font-size: 0.87rem;
     color: rgba(255, 255, 255, 0.50);
 }
+
+
+
+
+/* FOOTER SECTION */
+
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.foot{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4.12rem;
+    padding-bottom: 5rem;
+}
+
+
+.footer-title{
+    width: 40%;
+    align-self: start;
+}
+
+.footer-title h2{
+    color: var(--primary-theme-color);
+    font-weight: 800;
+    font-size: 4.37rem;
+    font-style: italic;
+    line-height: 120%;
+    margin-bottom: 1.25rem;
+}
+
+
+.footer-title p{
+    font-size: 0.87rem;
+    color: rgba(255, 255, 255, 0.50);
+    line-height: 1.5rem;
+    letter-spacing: 0.3px;
+}
+
+.footer-start{
+    
+}
+
+.footer-start h2{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 2.43rem;
+}
+
+.footer-start ul{
+    list-style: none;
+    
+}
+
+.footer-start ul li{
+    padding: 0.62rem 0;
+}
+
+.footer-start ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.43rem;
+
+}
+
+.copy hr{
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.copy p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+}
+
+
+
+
+
+
+
+
 
 
 
