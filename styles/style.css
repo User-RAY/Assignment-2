@@ -654,6 +654,7 @@ footer{
 }
 
 .copy p{
+    font-size: 1.25rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     padding-top: 2.25rem;
@@ -934,7 +935,32 @@ footer{
     .team-info img{
         min-width: auto;
     }
+
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-title{
+        width: 80%;
+    }
+
+    .footer-start{
+        padding-top: 1.87rem;
+    }
+
+    .copy p{
+        text-align: left;
+    }
+    
 }
+
+
+
+
+
+
+
 
 
 
