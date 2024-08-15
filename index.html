@@ -165,9 +165,9 @@
 
                     <form action="#">
 
-                        <input type="number" placeholder="Height/cm">
-                        <input type="number" placeholder="Weight/kg">
-                        <input type="number" placeholder="Age">
+                        <input type="number" placeholder="Height/cm" required>
+                        <input type="number" placeholder="Weight/kg" required>
+                        <input type="number" placeholder="Age" required>
                         <select name="sex" id="sex" required>
                             <option value="" disabled selected id="select-sex">Sex</option>
                             <option value="male">Male</option>
@@ -182,9 +182,10 @@
                         </select> -->
                         <select name="activity" id="activity" required>
                             <option value="" disabled selected id="select-sex">Select an activity factor</option>
-                            <option value="push-up">Push Up</option>
-                            <option value="pull-up">Pull Up</option>
-                            <option value="run">Running</option>
+                            <option value="activity1">No weekly activity</option>
+                            <option value="activity2">Normal weekly activity</option>
+                            <option value="activity3">Heavy weekly activity</option>
+                            <option value="activity4">Very Heavy weekly activity</option>
                         </select>
 
                         <input type="submit" class="btn-primary cal-btn" value="Calculate">

@@ -59,17 +59,19 @@ img{
     width: 100%;
 }
 
-/* .btn-primary:hover{
-    background-color: rgb(0, 0, 0);
+.btn-primary:hover{
+    /* background-color: rgb(0, 0, 0);
     border: 1px solid white;
-    margin: 0 0.9rem 0 0;
+    margin: 0 0.9rem 0 0; */
+    color: black;
 }
 
 .btn-secondary:hover{
-    background-color: var(--primary-theme-color);
+    /* background-color: var(--primary-theme-color);
     border: none;
-    margin: 0.8px;
-} */
+    margin: 0.8px; */
+    color: var(--primary-theme-color);
+}
 
 /* .space{
     padding: 1rem 0;
@@ -442,6 +444,7 @@ background-color: rgba(34, 34, 34, 1.00);
     font-size: 0.87rem;
     color: rgba(255, 255, 255, 0.50);
     margin-bottom: 2.12rem;
+    font-weight: 400;
 }
 
 select{
@@ -465,14 +468,14 @@ option {
 
 
 
-/* Chrome, Safari, Edge, Opera */
+/* Chrome, Safari, Edge, Opera ---angle down icon*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
+/* Firefox ---angle down icon */
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -487,6 +490,8 @@ input, select {
     width: 46%;
     margin: 0.3rem;
     font-size: 1rem;
+    letter-spacing: 0.8px;
+    line-height: 1.37rem;
 }
 
 
@@ -641,6 +646,10 @@ footer{
     color: rgba(255, 255, 255, 0.50);
     font-size: 1.43rem;
 
+}
+
+.footer-start ul li a:hover{
+    color: var(--primary-theme-color);    
 }
 
 .copy hr{
@@ -867,6 +876,7 @@ footer{
 
     .run{
         flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     .run-content{
